@@ -1,0 +1,42 @@
+{
+  "data":
+  [
+      {
+          "label": "Role01",
+          "code": "Docruments Folde",
+          "description": "description01",
+          "function": "function01",
+          "children": [{
+                  "label": "Role03",
+                  "code": "Work Folder",
+                  "description": "description03",
+                  "function": "function03",
+                  "children": [
+                    {"label": "Role04", "code": "Expenses Document","description": "description04","function": "function04"},
+                    {"label": "Role05", "code": "Resume Document","description": "description05",
+                      "function": "function05"}
+                  ]
+              },
+              {
+                  "label": "Role06",
+                  "code": "Home Folder",
+                  "description": "description06",
+                  "function": "function06",
+                  "children": [
+                    {"label": "Role07", "code": "Invoices for this month","description": "description07",
+                      "function": "function07"}
+                  ]
+              }]
+      },
+      {
+          "label": "Role02",
+          "code": "Pictures Folder",
+          "description": "description02",
+          "function": "function02",
+          "children": [
+              {"label": "Role08", "code": "Barcelona Photo","description": "description08",
+                "function": "function08"}
+          ]
+      }
+  ]
+}

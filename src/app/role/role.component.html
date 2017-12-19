@@ -1,0 +1,16 @@
+
+<div class="role-tree">
+    <p-growl [value]="msgs"></p-growl>
+    <p-tree [value]="roles" selectionMode="single" [(selection)]="selectedRole"
+      (onNodeSelect)="nodeSelect()" [contextMenu]="cm" >
+    </p-tree>
+    <p-contextMenu #cm [model]="rightClickMenu"></p-contextMenu>
+</div>
+<form>
+  <div class="role-detail">
+    <router-outlet></router-outlet>
+  </div>
+</form>
+<!-- clear float -->
+<div class="clear"></div>
+
