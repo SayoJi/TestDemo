@@ -10,13 +10,16 @@ import { GrowlModule, TreeModule, ContextMenuModule } from 'primeng/primeng';
 import { RoleService } from './role.service';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
+import { UserComponent } from './user/user.component';
+import { UserService } from './user.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     RoleComponent,
     RoleDetailComponent,
-    RoleCreateComponent
+    RoleCreateComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +30,10 @@ import { FormsModule } from '@angular/forms';
     HttpModule,
     FormsModule,
   ],
-  providers: [RoleService],
+  providers: [
+    RoleService,
+    UserService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
